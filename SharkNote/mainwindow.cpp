@@ -37,7 +37,6 @@ MainWindow::~MainWindow()
 }
 void MainWindow::cmdeinfuegenClicked()
 {
-    ui->LstAusgabe->clear();
     sqlbefehl.exec("SELECT id FROM notes");
     Fehleranzeige();
     int id = 0;
@@ -68,6 +67,7 @@ void MainWindow::Fehleranzeige()
 }
 void MainWindow::ausgabehandler(int feldanzahl)
 {
+    ui->LstAusgabe->clear();
     QString ausgabe;
     while(sqlbefehl.next())
     {
