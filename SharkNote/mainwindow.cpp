@@ -108,7 +108,7 @@ void MainWindow::on_pushButton_3_clicked()
 void MainWindow::on_yesbu_clicked()
 {
    int values = ui->spinBox->value();
-   sqlbefehl.exec("DELETE FROM contad WHERE id=\""+ QString::number(values) +"\"");
+   sqlbefehl.exec("DELETE FROM notes WHERE id=\""+ QString::number(values) +"\"");
    sqlbefehl.exec("SELECT * FROM notes");
    ausgabehandler(numberq);
    delhelpq(false);
