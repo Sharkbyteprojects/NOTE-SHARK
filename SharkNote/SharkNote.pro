@@ -30,7 +30,12 @@ SOURCES += \
         mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    sql-init.h \
+    init.h \
+    add.h \
+    delete.h \
+    augabehandler.h
 
 FORMS += \
         mainwindow.ui
